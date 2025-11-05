@@ -2,70 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>T-Rex Run 3D</title>
+    <title>T-Rex Run 3D - 3D Pixel Dinosaur Runner Game</title>
+
+    <link rel="icon" type="image/png" href="./media/no-internet.png" />
+    <link rel="shortcut icon" href="./media/no-internet.png" />
+
+    <meta
+      name="description"
+      content="Play T-Rex Run 3D - an exciting 3D pixel dinosaur runner game. Jump over obstacles, collect coins, and achieve high scores in this thrilling endless runner adventure."
+    />
+    <meta
+      name="keywords"
+      content="dinosaur game, trex run, 3d runner, pixel game, endless runner, browser game, free game"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="T-Rex Run 3D - 3D Pixel Dinosaur Runner"
+    />
+    <meta
+      property="og:description"
+      content="Experience the thrill of running as a T-Rex in this 3D pixel-style endless runner game. Avoid obstacles, collect coins, and set new high scores!"
+    />
+    <meta
+      property="og:image"
+      content="https://dinooline.top/media/no-internet.png"
+    />
+    <meta property="og:url" content="https://dinooline.top" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.min.css?patch=3x1" />
-
+    <link rel="stylesheet" href="./css/style.min.css?patch=3x1" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- Preload -->
-    <link rel="preload" as="image" href="media/repeat.png" />
-    <link rel="preload" as="image" href="media/preloader-dino.png" />
-    <link rel="preload" as="image" href="media/3d-title.png" />
-    <style>
-      .pixel-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 240px;
-        height: 70px;
-        cursor: pointer;
-        font-size: 24px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: white;
-        background: #ff8c00;
-        border: none;
-        box-shadow: 0 8px 0 #cc7000, 0 12px 0 #331400, 0 0 0 4px #331400;
-        transition: all 0.1s ease;
-        text-shadow: 2px 2px 0 #cc7000;
-        z-index: 999;
-        animation: jump 1.5s infinite, pulse 2s infinite;
+    <link rel="preload" as="image" href="./media/repeat.png" />
+    <link rel="preload" as="image" href="./media/preloader-dino.png" />
+    <link rel="preload" as="image" href="./media/3d-title.png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PLD6RV52X6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      .pixel-button:hover {
-        font-size: 26px;
-        box-shadow: 0 4px 0 #cc7000, 0 8px 0 #331400, 0 0 0 4px #331400;
-        animation: none;
-      }
-
-      .pixel-button:active {
-        box-shadow: 0 0 0 #cc7000, 0 4px 0 #331400, 0 0 0 4px #331400;
-        animation: none;
-      }
-      @keyframes jump {
-        0%,
-        100% {
-          transform: translate(-50%, -50%) translateY(0);
-        }
-        50% {
-          transform: translate(-50%, -50%) translateY(-15px);
-        }
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          box-shadow: 0 8px 0 #cc7000, 0 12px 0 #331400, 0 0 0 4px #331400,
-            0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        50% {
-          box-shadow: 0 8px 0 #cc7000, 0 12px 0 #331400, 0 0 0 4px #331400,
-            0 0 20px rgba(255, 255, 255, 0.8);
-        }
-      }
-    </style>
+      gtag("config", "G-PLD6RV52X6");
+    </script>
   </head>
   <body>
     <div id="preloader">
@@ -90,39 +76,259 @@
         </div>
       </div>
     </div>
-
-    <div id="chrome-no-internet">
-      <div id="preloader"></div>
-      <button class="pixel-button" id="game-start">Start Game</button>
-    </div>
-
+    <div id="chrome-no-internet"></div>
     <div id="game-restart" class="hidden">
-      <h1>ИГРА ЗАКОНЧЕНА</h1>
-      <img src="media/repeat.png" />
+      <h1>GAME OVER</h1>
+      <img src="./media/repeat.png" />
+    </div>
+    <div class="main-page" id="home-page">
+      <div class="main-content">
+        <a
+          href="https://github.com/yourusername/mlbb-name-generator"
+          class="github-corner"
+          aria-label="View source on GitHub"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="80"
+            height="80"
+            viewBox="0 0 250 250"
+            style="
+              fill: #151513;
+              color: #fff;
+              position: absolute;
+              top: 0;
+              border: 0;
+              right: 0;
+            "
+            aria-hidden="true"
+          >
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+              d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor"
+              style="transform-origin: 130px 106px"
+              class="octo-arm"
+            ></path>
+            <path
+              d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor"
+              class="octo-body"
+            ></path>
+          </svg>
+        </a>
+        <div class="game-container">
+          <div class="game-title">TREX RUN 3D</div>
+          <div class="dino"></div>
+
+          <button class="pixel-button" id="game-start">
+            Start Game
+            <img class="dino-left" src="./media/no-internet.png" alt="" />
+          </button>
+        </div>
+        <div class="instructions">
+          <h2>T-Rex Run 3D</h2>
+          <p>
+            Experience the thrill of running as a T-Rex in this 3D pixel-style
+            endless runner game. Jump over obstacles, collect coins, and set new
+            high scores!
+          </p>
+
+          <h3>Gameplay</h3>
+          <p>
+            Control your T-Rex dinosaur as it runs through a prehistoric
+            landscape. Your goal is to run as far as possible while avoiding
+            obstacles and collecting coins.
+          </p>
+
+          <h3>How to Play</h3>
+          <ul>
+            <li>
+              <strong>Jump:</strong> Press SPACEBAR or UP ARROW to jump over
+              obstacles
+            </li>
+            <li>
+              <strong>Duck:</strong> Press DOWN ARROW to slide under low
+              obstacles
+            </li>
+            <li>
+              <strong>Double Jump:</strong> Press jump twice in mid-air for
+              extra height
+            </li>
+            <li>
+              <strong>Collect Coins:</strong> Gather coins to unlock new
+              dinosaur skins
+            </li>
+            <li>
+              <strong>Avoid Obstacles:</strong> Cacti, rocks, and other
+              dinosaurs will end your run
+            </li>
+            <li>
+              <strong>Power-ups:</strong> Collect special items for temporary
+              advantages
+            </li>
+          </ul>
+
+          <h3>Features</h3>
+          <ul>
+            <li>3D pixel graphics with retro charm</li>
+            <li>Multiple dinosaur characters to unlock</li>
+            <li>Increasing difficulty as you progress</li>
+            <li>Special power-ups and bonuses</li>
+            <li>Global leaderboard to compete with friends</li>
+            <li>Day/Night cycle for varied gameplay</li>
+            <li>Special events and seasonal content</li>
+          </ul>
+
+          <h3>Tips</h3>
+          <ul>
+            <li>
+              Time your jumps carefully - obstacles come in different heights
+            </li>
+            <li>Collect coins to unlock special abilities</li>
+            <li>Watch for power-ups that give temporary invincibility</li>
+            <li>Practice makes perfect - learn the patterns!</li>
+            <li>
+              Try to memorize obstacle sequences for better reaction times
+            </li>
+            <li>Use headphones for immersive audio cues</li>
+          </ul>
+
+          <h3>Scoring</h3>
+          <p>
+            Earn points for every meter you run. Bonus points are awarded for
+            collecting coins and power-ups. The longer you survive, the higher
+            your score multiplier becomes!
+          </p>
+
+          <h3>Unlockables</h3>
+          <p>
+            As you play, you'll earn coins that can be used to unlock new
+            dinosaur skins, each with unique visual styles. Some rare skins
+            provide special visual effects!
+          </p>
+        </div>
+        <footer class="copyright">
+          <p>
+            &copy; 2025 <a href="http://dinooline.top">dinooline.top.</a> All
+            Rights Reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <button class="info-button" id="info-button">?</button>
+    <div class="game-info" id="game-info">
+      <h2>T-Rex Run 3D</h2>
+      <p>
+        Experience the thrill of running as a T-Rex in this 3D pixel-style
+        endless runner game. Jump over obstacles, collect coins, and set new
+        high scores!
+      </p>
+
+      <h3>Gameplay</h3>
+      <p>
+        Control your T-Rex dinosaur as it runs through a prehistoric landscape.
+        Your goal is to run as far as possible while avoiding obstacles and
+        collecting coins.
+      </p>
+
+      <h3>How to Play</h3>
+      <ul>
+        <li>
+          <strong>Jump:</strong> Press SPACEBAR or UP ARROW to jump over
+          obstacles
+        </li>
+        <li>
+          <strong>Duck:</strong> Press DOWN ARROW to slide under low obstacles
+        </li>
+        <li>
+          <strong>Double Jump:</strong> Press jump twice in mid-air for extra
+          height
+        </li>
+        <li>
+          <strong>Collect Coins:</strong> Gather coins to unlock new dinosaur
+          skins
+        </li>
+        <li>
+          <strong>Avoid Obstacles:</strong> Cacti, rocks, and other dinosaurs
+          will end your run
+        </li>
+        <li>
+          <strong>Power-ups:</strong> Collect special items for temporary
+          advantages
+        </li>
+      </ul>
+
+      <h3>Features</h3>
+      <ul>
+        <li>3D pixel graphics with retro charm</li>
+        <li>Multiple dinosaur characters to unlock</li>
+        <li>Increasing difficulty as you progress</li>
+        <li>Special power-ups and bonuses</li>
+        <li>Global leaderboard to compete with friends</li>
+        <li>Day/Night cycle for varied gameplay</li>
+        <li>Special events and seasonal content</li>
+      </ul>
+
+      <h3>Tips</h3>
+      <ul>
+        <li>Time your jumps carefully - obstacles come in different heights</li>
+        <li>Collect coins to unlock special abilities</li>
+        <li>Watch for power-ups that give temporary invincibility</li>
+        <li>Practice makes perfect - learn the patterns!</li>
+        <li>Try to memorize obstacle sequences for better reaction times</li>
+        <li>Use headphones for immersive audio cues</li>
+      </ul>
+
+      <h3>Scoring</h3>
+      <p>
+        Earn points for every meter you run. Bonus points are awarded for
+        collecting coins and power-ups. The longer you survive, the higher your
+        score multiplier becomes!
+      </p>
+
+      <h3>Unlockables</h3>
+      <p>
+        As you play, you'll earn coins that can be used to unlock new dinosaur
+        skins, each with unique visual styles. Some rare skins provide special
+        visual effects!
+      </p>
     </div>
 
-    <script src="libs/three/three.min.js"></script>
-    <script src="libs/three/controls/OrbitControls.js"></script>
-    <script src="libs/three/helpers/CameraHelper.js"></script>
-    <script src="libs/three/loaders/OBJLoader.js"></script>
-    <script src="libs/vox/vox.min.js"></script>
+    <script src="./libs/three/three.min.js"></script>
+    <script src="./libs/three/controls/OrbitControls.js"></script>
+    <script src="./libs/three/helpers/CameraHelper.js"></script>
+    <script src="./libs/three/loaders/OBJLoader.js"></script>
+    <script src="./libs/vox/vox.min.js"></script>
 
     <!-- Shaders & Postprocessing -->
-    <script src="libs/three/postprocessing/EffectComposer.js"></script>
-    <script src="libs/three/postprocessing/RenderPass.js"></script>
-    <script src="libs/three/postprocessing/ShaderPass.js"></script>
-    <script src="libs/three/shaders/CopyShader.js"></script>
-    <script src="libs/three/shaders/ConvolutionShader.js"></script>
-    <script src="libs/three/postprocessing/SAOPass.js"></script>
-    <script src="libs/three/shaders/SAOShader.js"></script>
-    <script src="libs/three/shaders/DepthLimitedBlurShader.js"></script>
-    <script src="libs/three/shaders/UnpackDepthRGBAShader.js"></script>
+    <script src="./libs/three/postprocessing/EffectComposer.js"></script>
+    <script src="./libs/three/postprocessing/RenderPass.js"></script>
+    <script src="./libs/three/postprocessing/ShaderPass.js"></script>
+    <script src="./libs/three/shaders/CopyShader.js"></script>
+    <script src="./libs/three/shaders/ConvolutionShader.js"></script>
+    <script src="./libs/three/postprocessing/SAOPass.js"></script>
+    <script src="./libs/three/shaders/SAOShader.js"></script>
+    <script src="./libs/three/shaders/DepthLimitedBlurShader.js"></script>
+    <script src="./libs/three/shaders/UnpackDepthRGBAShader.js"></script>
 
-    <script src="libs/nebula/three-nebula.js"></script>
-    <script src="libs/howler/howler.min.js"></script>
+    <script src="./libs/nebula/three-nebula.js"></script>
+    <script src="./libs/howler/howler.min.js"></script>
 
-    <script src="libs/visibly/visibly.js"></script>
-    <script src="js/config-high.js?patch=3x1"></script>
-    <script src="js/build.min.js?patch=3x1"></script>
+    <script src="./libs/visibly/visibly.js"></script>
+    <script src="./js/config-high.js?patch=3x1"></script>
+    <script src="./js/build.min.js?patch=3x1"></script>
+
+    <script>
+      // Toggle game info panel
+      document
+        .getElementById("info-button")
+        .addEventListener("click", function () {
+          const infoPanel = document.getElementById("game-info");
+          infoPanel.style.display =
+            infoPanel.style.display === "block" ? "none" : "block";
+        });
+    </script>
   </body>
 </html>
