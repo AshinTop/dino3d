@@ -2,7 +2,7 @@
 
 A 3D pixel-style endless runner game featuring a T-Rex dinosaur. Forked from [Priler/dino3d](https://github.com/Priler/dino3d) with enhanced features and improved gameplay.
 
-🎮 online game：[https://dinoonline.top](https://dinoonline.top)
+🎮 online game：[https://ashintop.github.io/dino3d/](https://ashintop.github.io/dino3d/)
 
 # Screenshot
 
@@ -67,7 +67,7 @@ cd dino3d
 
 ## Online Play
 
-Visit [[https://dinoonline.top](https://dinoonline.top)] to play directly in your browser.
+Visit [https://ashintop.github.io/dino3d/](https://ashintop.github.io/dino3d/) to play directly in your browser.
 
 ## 🛠️ Technical Details
 
@@ -221,7 +221,7 @@ If you encounter any issues or have questions:
 
 ### Project Links
 
-- ​**Live Demo**: [[https://dinoonline.top](https://dinoonline.top)]
+- ​**Live Demo**: [https://ashintop.github.io/dino3d/](https://ashintop.github.io/dino3d/)
 - ​**Source Code**: [https://github.com/AshinTop/dino3d](https://github.com/AshinTop/dino3d)
 - ​**Original Project**: [https://github.com/Priler/dino3d](https://github.com/Priler/dino3d)
 
